@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-config
+  namespace: local-events
+data:
+  SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/local_events
+

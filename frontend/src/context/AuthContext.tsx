@@ -31,7 +31,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     try {
       const basic = `Basic ${btoa(`${username}:${password}`)}`
 
-      const response = await fetch('http://localhost:8080/api/auth/me', {
+      const response = await fetch('http://localhost:30080/api/auth/me', {
         headers: { Authorization: basic },
       })
 
@@ -52,7 +52,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
   const register = async (username: string, password: string): Promise<boolean> => {
     try {
-      const response = await fetch('http://localhost:8080/api/auth/register', {
+      const response = await fetch('http://localhost:30080/api/auth/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),

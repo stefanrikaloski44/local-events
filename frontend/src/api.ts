@@ -1,6 +1,6 @@
 import type {Event, EventRequest} from './types'
 
-const API_BASE = 'http://localhost:8080'
+const API_BASE = 'http://localhost:30080'
 
 const getAuthHeader = (): Record<string, string> => {
     const auth = localStorage.getItem('auth')
