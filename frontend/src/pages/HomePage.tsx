@@ -194,7 +194,7 @@ export default function HomePage() {
                                 <div className="card h-100 shadow-sm">
                                     {event.imageUrl && (
                                         <img
-                                            src={`http://localhost:8080${event.imageUrl}`}
+                                            src={`http://localhost:30080${event.imageUrl}`}
                                             className="card-img-top"
                                             alt={event.title}
                                             style={{height: '200px', objectFit: 'cover'}}

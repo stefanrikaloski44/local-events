@@ -35,4 +35,11 @@ spec:
                 secretKeyRef:
                   name: backend-secret
                   key: SPRING_DATASOURCE_PASSWORD
+          volumeMounts:
+            - name: uploads-volume
+              mountPath: /app/uploads/events
+      volumes:
+        - name: uploads-volume
+          persistentVolumeClaim:
+            claimName: uploads-pvc
 

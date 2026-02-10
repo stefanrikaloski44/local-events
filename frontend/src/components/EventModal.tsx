@@ -34,7 +34,7 @@ export default function EventModal({ show, onClose, onSave, initialEvent }: Even
         imageUrl: initialEvent.imageUrl,
       })
       setImagePreview(
-        initialEvent.imageUrl ? `http://localhost:8080${initialEvent.imageUrl}` : null,
+        initialEvent.imageUrl ? `http://localhost:30080${initialEvent.imageUrl}` : null,
       )
       setImageFile(null)
     } else {
